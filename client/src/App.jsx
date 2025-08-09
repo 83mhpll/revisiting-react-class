@@ -1,31 +1,14 @@
-import {
-  BeakerIcon,
-  HomeIcon,
-  ShoppingCartIcon,
-  DevicePhoneMobileIcon,
-  ComputerDesktopIcon,
-  MusicalNoteIcon,
-  ShoppingBagIcon,
-  VideoCameraIcon,
-} from "@heroicons/react/24/solid";
+import Navbar from "./components/Navbar";
+import ProductCategory from "./components/ProductCategory";
+import ProductHighlight from "./components/ProductHighlight";
+import Footer from "./components/Footer";
 
-// 🛠️ Todo 1 / Step 3: ให้ Import ตัว Component Navbar เพื่อจะนำไป Render ลงใน Component App ด้านล่าง
-
-//     ==== ตัวอย่าง ====
-
-//     import Navbar from "./components/Navbar.jsx"
 
 function App() {
   return (
     <>
-      {/* 
-        Todo 1 / Step 4: ลบ HTML Element ที่แสดง <nav> ออกจาก App.jsx (ตั้งแต่บรรทัดที่ 29 - 61)
-        แล้วนำ Component Navbar ที่ Import มา Render แทน
-
-        ==== ตัวอย่าง ====
-
-        <Navbar />
-      */}
+revisting-react-class/Mhok
+  
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-white text-xl font-semibold">
@@ -59,7 +42,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      {/* 🛠️ Todo 2: ให้สร้าง Component ProductHighlight แล้วนำมา Render */}
+     
       <section className="bg-gray-200 py-8">
         <div className="container mx-auto">
           <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
@@ -118,7 +101,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/* 🛠️ Todo 3: ให้สร้าง Component ProductCategory แล้วนำมา Render */}
+     
       <section className="bg-gray-100 py-8">
         <div className="container mx-auto">
           <h2 className="text-2xl font-semibold mb-4">Product Categories</h2>
@@ -150,12 +133,18 @@ function App() {
           </div>
         </div>
       </section>
-      {/* 🛠️ Todo 4: ให้สร้าง Component Footer แล้วนำมา Render */}
+     
       <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto text-center">
           <p>&copy; 2023 Your Ecommerce Store. All rights reserved.</p>
         </div>
       </footer>
+
+      <Navbar />
+      <ProductHighlight />
+      <ProductCategory />
+      <Footer />
+ main
     </>
   );
 }
